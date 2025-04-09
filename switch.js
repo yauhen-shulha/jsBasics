@@ -1,4 +1,29 @@
-// === JavaScript switch statement – 10 exercises ===
+// === 📘 JavaScript switch – EXPLANATION + EXAMPLE ===
+
+/*
+📌 switch(expression)
+✔️ Used to compare one value against multiple predefined cases
+✔️ Useful for exact match (e.g., role, type, status, etc.)
+*/
+
+const trafficLight = "green";
+
+switch (trafficLight) {
+  case "red":
+    console.log("Stop");
+    break;
+  case "yellow":
+    console.log("Wait");
+    break;
+  case "green":
+    console.log("Go");
+    break;
+  default:
+    console.log("Invalid color");
+}
+// Output: "Go"
+
+// === 🟢 BEGINNER LEVEL – switch Practice Tasks (no answers) ===
 
 /* 1. Print day name based on number (1 = Monday, ..., 7 = Sunday) */
 const dayNumber = 3;

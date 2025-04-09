@@ -53,6 +53,31 @@ console.log(result);      // Output: 8
 and use it later anywhere in your code!
 */
 
+// === 📘 EXAMPLE: Using a loop inside a function ===
+
+/*
+📦 You can put a loop (like for, while) inside a function
+to repeat something multiple times when the function is called.
+*/
+
+// This function prints numbers from 1 to the number you give it
+function countTo(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log(i);
+  }
+}
+
+// Call the function
+countTo(5);
+
+/*
+Output:
+1
+2
+3
+4
+5
+*/
 
 // === 🟢 BEGINNER LEVEL TASKS – With Podskazki (Hints) ===
 
@@ -131,3 +156,63 @@ const value = 15;
 
 /* 20. Write a function that returns initials from full name */
 // Input: "John Doe" → Output: "J.D."
+
+
+// === 📘 FUNCTIONS WITH LOOPS + RETURN – EXPLANATION & EXAMPLE ===
+
+/*
+Yes! A function can have a loop inside it,
+and still use `return` to give back a result.
+
+Example: Sum numbers from 1 to n
+*/
+
+function sumTo(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i;
+  }
+  return total;
+}
+
+const result = sumTo(5);
+console.log(result); // 15
+
+// === 🟢 BEGINNER TASKS – Loop inside function + return (with podskazki) ===
+
+/* 1. Write a function that returns the sum of numbers 1 to n */
+// Podskazka: use a for loop, total += i, return total
+// Input: 4 → Output: 10
+
+/* 2. Write a function that counts how many even numbers from 1 to n */
+// Podskazka: use a loop + check if number % 2 === 0
+// Input: 6 → Output: 3
+
+/* 3. Return the product (multiply) of all numbers from 1 to n */
+// Podskazka: let product = 1; then multiply inside loop
+// Input: 4 → Output: 24
+
+/* 4. Create a function that returns the number of vowels in a word */
+// Podskazka: loop through string, check if char is in "aeiou"
+// Input: "apple" → Output: 2
+
+/* 5. Create a function that returns how many letters are uppercase */
+// Podskazka: use char === char.toUpperCase()
+// Input: "HeLLo" → Output: 3
+
+// === 🟡 INTERMEDIATE TASKS – Loop + return (no podskazki) ===
+
+/* 6. Return true if any number in array is negative */
+const arr1 = [5, -2, 9];
+
+/* 7. Count how many times the letter "a" appears in a string */
+const str1 = "banana";
+
+/* 8. Write a function that returns the factorial of a number */
+const num1 = 5;
+
+/* 9. Create a function that returns the average of all numbers in an array */
+const arr2 = [10, 20, 30];
+
+/* 10. Create a function that returns the longest word from an array */
+const words = ["hi", "welcome", "to", "JavaScript"];

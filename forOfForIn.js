@@ -1,4 +1,33 @@
-// === 🟢 BEGINNER LEVEL – Marked with for...of / for...in ===
+// === 📘 LOOP TYPES EXPLAINED – for...of & for...in ===
+
+/*
+📌 for...of
+✔️ Loops over values of iterables (arrays, strings, sets, etc.)
+✔️ Great for reading values directly
+*/
+
+const exampleArray = ["red", "green", "blue"];
+for (const color of exampleArray) {
+  console.log(color); // red, green, blue
+}
+
+const exampleString = "JS";
+for (const char of exampleString) {
+  console.log(char); // J, S
+}
+
+/*
+📌 for...in
+✔️ Loops over keys (property names) of objects
+✔️ Use object[key] to get values
+*/
+
+const exampleObject = { brand: "Toyota", year: 2020 };
+for (const key in exampleObject) {
+  console.log(`${key}: ${exampleObject[key]}`); // brand: Toyota, year: 2020
+}
+
+// === 🟢 BEGINNER TASKS – for...of / for...in ===
 
 /* 1. Print each item in an array */
 // Method: for...of
@@ -41,8 +70,7 @@ const text = "javascript";
 // Method: for...of
 const nums2 = [5, 6, 8, 3, 4];
 
-
-// === 🟡 INTERMEDIATE LEVEL – Marked with for...of / for...in ===
+// === 🟡 INTERMEDIATE TASKS – for...of / for...in ===
 
 /* 11. Sum all numbers in array */
 // Method: for...of
@@ -83,47 +111,3 @@ const flags = { isAdmin: true, isActive: false, name: "User" };
 /* 20. Print string lengths from array */
 // Method: for...of
 const words = ["js", "react", "html"];
-
-
-// === 🔴 ADVANCED LEVEL – Marked with for...of / for...in ===
-
-/* 21. Create object with item counts from array */
-// Method: for...of
-const items = ["pen", "book", "pen", "pen", "book"];
-
-/* 22. Combine multiple objects */
-// Method: for...in
-const part1 = { a: 1 }, part2 = { b: 2 }, part3 = { c: 3 };
-
-/* 23. Convert all object values to uppercase strings */
-// Method: for...in
-const settings2 = { theme: "dark", font: "arial" };
-
-/* 24. Extract only string values from object */
-// Method: for...in
-const record = { id: 10, name: "Anna", active: true };
-
-/* 25. Print keys and their value types */
-// Method: for...in
-const obj = { x: 1, y: "yes", z: false };
-
-/* 26. Manually clone object */
-// Method: for...in
-const source = { one: 1, two: 2 };
-const clone = {};
-
-/* 27. Print each name in array of objects */
-// Method: for...of
-const users = [{ name: "Tom" }, { name: "Lily" }, { name: "Max" }];
-
-/* 28. Filter props where value length > 3 */
-// Method: for...in
-const fields = { short: "yes", longKey: "value", id: "x" };
-
-/* 29. Count vowels in string */
-// Method: for...of
-const phrase = "for in and for of";
-
-/* 30. Convert all numeric values in object to strings */
-// Method: for...in
-const mixedTypes = { a: 1, b: "test", c: true, d: 99 };

@@ -1,142 +1,129 @@
-// === 🟢 BEGINNER LEVEL – Array Methods (with method names) ===
+// === 📘 ARRAY METHODS – EXPLANATIONS + EXAMPLES ===
 
-/* 1. Find the length of the array */
+/* .length – get number of items */
+const ex1 = [1, 2, 3];
+console.log(ex1.length); // 3
+
+/* .push() – add item to end */
+const ex2 = [1, 2];
+ex2.push(3);
+console.log(ex2); // [1, 2, 3]
+
+/* .pop() – remove last item */
+const ex3 = [1, 2, 3];
+ex3.pop();
+console.log(ex3); // [1, 2]
+
+/* .unshift() – add item to start */
+const ex4 = ["b", "c"];
+ex4.unshift("a");
+console.log(ex4); // ["a", "b", "c"]
+
+/* .shift() – remove first item */
+const ex5 = [10, 20, 30];
+ex5.shift();
+console.log(ex5); // [20, 30]
+
+/* .join() – convert array to string */
+const ex6 = ["a", "b", "c"];
+console.log(ex6.join("-")); // "a-b-c"
+
+/* .includes() – check if item exists */
+const ex7 = [1, 2, 3];
+console.log(ex7.includes(2)); // true
+
+/* .indexOf() – get index of item */
+const ex8 = ["dog", "cat"];
+console.log(ex8.indexOf("cat")); // 1
+
+/* .reverse() – reverse array in place */
+const ex9 = [1, 2, 3];
+ex9.reverse();
+console.log(ex9); // [3, 2, 1]
+
+/* .split() – turn string into array */
+const ex10 = "a,b,c";
+console.log(ex10.split(",")); // ["a", "b", "c"]
+
+/* .sort() – sort array items (strings by default) */
+const ex11 = [3, 1, 2];
+ex11.sort();
+console.log(ex11); // [1, 2, 3]
+
+
+
+// === 🟢 BEGINNER LEVEL – Tasks (method name included) ===
+
+/* 1. Get the length of the array */
 // Method: .length
 const arr1 = [10, 20, 30];
-// Output: 3
 
-/* 2. Add an element to the end of the array */
+/* 2. Add a value to the end */
 // Method: .push()
 const arr2 = [1, 2, 3];
-// Output: [1, 2, 3, 4]
 
-/* 3. Remove the last element from the array */
+/* 3. Remove the last element */
 // Method: .pop()
 const arr3 = [5, 6, 7];
-// Output: [5, 6]
 
-/* 4. Add an element to the beginning of the array */
+/* 4. Add an item to the beginning */
 // Method: .unshift()
 const arr4 = ["b", "c"];
-// Output: ["a", "b", "c"]
 
-/* 5. Remove the first element of the array */
+/* 5. Remove the first item */
 // Method: .shift()
 const arr5 = [100, 200, 300];
-// Output: [200, 300]
 
-/* 6. Join array elements into a string */
+/* 6. Join array into a string with "-" */
 // Method: .join()
 const arr6 = ["a", "b", "c"];
-// Output: "a-b-c"
 
-/* 7. Check if the array includes the number 4 */
+/* 7. Check if array includes number 4 */
 // Method: .includes()
 const arr7 = [1, 2, 3, 4, 5];
-// Output: true
 
-/* 8. Find the index of "dog" in the array */
+/* 8. Find the index of "dog" */
 // Method: .indexOf()
 const arr8 = ["cat", "dog", "bird"];
-// Output: 1
 
 /* 9. Reverse the array */
 // Method: .reverse()
 const arr9 = [1, 2, 3];
-// Output: [3, 2, 1]
 
 /* 10. Convert a string to an array */
 // Method: .split()
 const str = "one,two,three";
-// Output: ["one", "two", "three"]
 
 
-// === 🟡 INTERMEDIATE LEVEL – Array Methods (no method names) ===
+
+// === 🟡 INTERMEDIATE LEVEL – Tasks (no method name) ===
 
 /* 11. Sort the array in ascending order */
 const arr11 = [5, 1, 4, 2];
-// Output: [1, 2, 4, 5]
 
 /* 12. Get a slice of the array from index 1 to 3 */
 const arr12 = ["a", "b", "c", "d", "e"];
-// Output: ["b", "c"]
 
 /* 13. Remove 2 items starting from index 1 */
 const arr13 = ["x", "y", "z", "w"];
-// Output: ["x", "w"]
 
-/* 14. Double every number in the array */
-const arr14 = [2, 4, 6];
-// Output: [4, 8, 12]
+/* 14. Join array of words with spaces */
+const arr14 = ["Hello", "JavaScript", "World"];
 
-/* 15. Filter out numbers less than 10 */
-const arr15 = [5, 10, 15, 2, 25];
-// Output: [10, 15, 25]
+/* 15. Check if array contains only numbers */
+const arr15 = [1, 2, "3", 4];
 
-/* 16. Check if all numbers are even */
-const arr16 = [2, 4, 6, 8];
-// Output: true
+/* 16. Find the index of the last item */
+const arr16 = ["first", "middle", "last"];
 
-/* 17. Check if at least one number is odd */
-const arr17 = [2, 4, 7, 8];
-// Output: true
+/* 17. Add multiple items to the start */
+const arr17 = [3, 4, 5];
 
-/* 18. Find the first number greater than 50 */
-const arr18 = [10, 40, 60, 80];
-// Output: 60
+/* 18. Remove and return the last element */
+const arr18 = ["apple", "banana", "cherry"];
 
-/* 19. Sum all numbers in the array */
-const arr19 = [5, 10, 15];
-// Output: 30
+/* 19. Turn an array into a comma-separated string */
+const arr19 = [100, 200, 300];
 
-/* 20. Create an array of string lengths */
-const arr20 = ["hi", "hello", "hey"];
-// Output: [2, 5, 3]
-
-
-// === 🔴 ADVANCED LEVEL – Array Methods (real-world challenges) ===
-
-/* 21. Remove duplicates from the array */
-const arr21 = [1, 2, 2, 3, 4, 4, 5];
-// Output: [1, 2, 3, 4, 5]
-
-/* 22. Flatten a nested array (one level deep) */
-const arr22 = [[1, 2], [3, 4], [5]];
-// Output: [1, 2, 3, 4, 5]
-
-/* 23. Group numbers by even and odd */
-const arr23 = [1, 2, 3, 4, 5];
-// Output: { even: [2, 4], odd: [1, 3, 5] }
-
-/* 24. Count how many times each number appears */
-const arr24 = [1, 2, 2, 3, 1, 1];
-// Output: { 1: 3, 2: 2, 3: 1 }
-
-/* 25. Convert array of strings to title case */
-const arr25 = ["hello world", "javascript", "open ai"];
-// Output: ["Hello World", "Javascript", "Open Ai"]
-
-/* 26. Remove falsy values (null, undefined, 0, "", false) */
-const arr26 = [0, 1, false, 2, "", 3, null];
-// Output: [1, 2, 3]
-
-/* 27. Chunk array into groups of 2 */
-const arr27 = [1, 2, 3, 4, 5, 6];
-// Output: [[1,2],[3,4],[5,6]]
-
-/* 28. Get the intersection of two arrays */
-const a1 = [1, 2, 3, 4];
-const a2 = [3, 4, 5, 6];
-// Output: [3, 4]
-
-/* 29. Merge two arrays and remove duplicates */
-const arr28 = [1, 2, 3];
-const arr29 = [3, 4, 5];
-// Output: [1, 2, 3, 4, 5]
-
-/* 30. Convert array of objects to one object using IDs as keys */
-const arr30 = [
-  { id: 1, name: "Alice" },
-  { id: 2, name: "Bob" }
-];
-// Output: { 1: "Alice", 2: "Bob" }
+/* 20. Check if array includes "admin" */
+const arr20 = ["user", "editor", "admin"];
